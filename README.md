@@ -3,3 +3,4 @@
 ## toto je změna provedená na lokále
 
 Tomas Zizka
+v ramci predmetu IS
