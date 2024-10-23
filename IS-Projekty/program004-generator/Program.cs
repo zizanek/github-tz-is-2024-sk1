@@ -1,4 +1,6 @@
-﻿string again = "a";
+﻿using System.Security.Authentication.ExtendedProtection;
+
+string again = "a";
         
         while(again == "a") {
             Console.Clear();
@@ -34,12 +36,17 @@
             Console.WriteLine("==========================================");
             Console.WriteLine();
 
+            //deklarace pole    
+            int[] myArray = new int[n];
+
+            Random randomNumber = new Random();
+
+            Console.WriteLine("\n\nNáhodná čísla:");
+            for(int i=0; i<n; i++) {
+                myArray[i] = randomNumber.Next(dm, hm+1);
+                Console.Write("{0}; ", myArray[i]); 
+            }
             
-
-
-
-
-
             Console.WriteLine();
             Console.WriteLine("Pro opakování programu stiskněte klávesu A");
             again = Console.ReadLine();
